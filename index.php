@@ -85,8 +85,8 @@
                 </div>
                 <div class="p-2 w-full">
 
-                    <label for="message" class="leading-7 text-sm text-gray-600">コメント</label>
-                    <input type="text" id="comment" name="comment" 
+                    <label for="comment" class="leading-7 text-sm text-gray-600">コメント</label>
+                    <textarea id="comment" name="comment" 
                         class="
                             w-full
                             bg-gray-100 bg-opacity-50
@@ -97,7 +97,7 @@
                             py-1 px-3
                             resize-none
                         "
-                    >
+                    ></textarea>
                 </div>
             </div>
           

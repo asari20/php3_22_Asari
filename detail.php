@@ -109,9 +109,9 @@ if($status == false){
                     >
             
                 </div>
-                <div class="p-2 w-full"
-                    <label for="message" class="leading-7 text-sm text-gray-600">コメント</label>
-                    <input type="text" id="comment" name="comment"
+                <div class="p-2 w-full">
+                    <label for="comment" class="leading-7 text-sm text-gray-600">コメント</label>
+                    <textarea type="text" id="comment" name="comment"
                         class="
                             w-full
                             bg-gray-100 bg-opacity-50
@@ -123,8 +123,7 @@ if($status == false){
                             py-1 px-3
                             resize-none
                         " 
-                        value="<?=$result['comment']?>"
-                    >
+                    ><?=$result['comment']?></textarea>
                 </div>
             </div>
 
