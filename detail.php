@@ -211,7 +211,7 @@ $("#name").on("change", searchAPI);
 $("#author").on("change", searchAPI);
 
 $("#results").on("click", ".searchItem", function(){
-   
+
     const title = $(this).children(".title").contents().text();
     const author = $(this).children(".author").contents().text();
     const url = $(this).children(".link").children("a").attr("href");
