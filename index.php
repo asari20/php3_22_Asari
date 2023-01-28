@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c117fbda8a.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>ブックマーク</title>
 </head>
 <body class="text-gray-600 body-font">
 <header class="text-gray-600 body-font border-b border-gray-500">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a href="index.php" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <span class="ml-3 text-xl">BookMark</span>
-        </a>
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a href="index.php" 
+                class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <span class="ml-3 text-xl">BookMark</span>
+            </a>
 
-        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a href="select.php" class="mr-5 hover:text-gray-900 hover:cursor-pointer hover:bg-indigo-300">ブックマーク一覧</a>
-        </nav>
-  </div>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="select.php" 
+                    class="
+                        mr-5
+                        hover:text-gray-900 hover:cursor-pointer hover:bg-indigo-300
+                    ">
+                    ブックマーク一覧
+                </a>
+            </nav>
+    </div>
 </header>
 
 <main>
@@ -30,36 +38,95 @@
                 <div class="p-2 w-full">
                     
                     <label for="name" class="leading-7 text-sm text-gray-600">本のタイトル</label>
-                    <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base text-gray-700 py-1 px-3" require>
-                    
+                    <input type="text" id="name" name="name" 
+                        class="
+                            w-full
+                            bg-gray-100 bg-opacity-50
+                            rounded border border-gray-300
+                            focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200
+                            text-base text-gray-700
+                            py-1 px-3
+                        " 
+                        require
+                    >
+
                 </div>
                 <div class="p-2 w-full">
             
                     <label for="author" class="leading-7 text-sm text-gray-600">著者</label>
-                    <input type="text" id="author" name="author" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base text-gray-700 py-1 px-3" require>
+                    <input type="text" id="author" name="author" 
+                        class="
+                            w-full
+                            bg-gray-100 bg-opacity-50
+                            rounded border border-gray-300
+                            focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200
+                            text-base text-gray-700
+                            py-1 px-3
+                        " 
+                        require
+                    >
             
                 </div>
                 
                 <div class="p-2 w-full">
             
                     <label for="url" class="leading-7 text-sm text-gray-600">url</label>
-                    <input type="text" id="url" name="url" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base text-gray-700 py-1 px-3">
+                    <input type="text" id="url" name="url" 
+                        class="
+                            w-full
+                            bg-gray-100 bg-opacity-50
+                            rounded border border-gray-300
+                            focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200
+                            text-base text-gray-700
+                            py-1 px-3
+                        "
+                    >
             
                 </div>
                 <div class="p-2 w-full">
-               
+
                     <label for="message" class="leading-7 text-sm text-gray-600">コメント</label>
-                    <input type="text" id="comment" name="comment" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base text-gray-700 py-1 px-3 resize-none"></input>
+                    <input type="text" id="comment" name="comment" 
+                        class="
+                            w-full
+                            bg-gray-100 bg-opacity-50
+                            rounded border border-gray-300
+                            focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200
+                            h-32
+                            text-base text-gray-700
+                            py-1 px-3
+                            resize-none
+                        "
+                    >
                 </div>
             </div>
           
-            <input type="submit" value="送信" class="flex mx-auto mt-5 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            <input type="submit" value="送信" 
+                class="
+                    flex
+                    mx-auto mt-5
+                    text-white text-lg
+                    bg-indigo-500
+                    rounded border-0
+                    py-2 px-8
+                    focus:outline-none hover:bg-indigo-600
+                "
+            >
         </form>
     </section>
 
     <section id="search_result" class="lg:w-3/4 md:w-2/3 mx-auto container px-5 py-5 mx-auto">
         <div class="flex flex-col text-center w-full mb-5">
-            <h1 id="result_title" class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-700" style="display: none;">検索結果</h1>
+            <h1 id="result_title" 
+                class="
+                    sm:text-3xl
+                    text-2xl font-medium
+                    title-font
+                    mb-4
+                    text-gray-700
+                " 
+                style="display: none;"
+            >検索結果</h1>
         </div>
         <ul id="results" class="flex flex-wrap justify-center"></ul>
 
@@ -92,7 +159,16 @@ function searchAPI(val){
             }
 
 
-            html += `<div class="m-1 p-1 border border-gray-300 w-1/5 rounded text-center hover:bg-indigo-100 hover:cursor-pointer searchItem">
+            html += `<div 
+                        class="
+                            m-1 p-1
+                            rounded border border-gray-300
+                            w-1/5 
+                            text-center
+                            hover:bg-indigo-100 hover:cursor-pointer
+                            searchItem
+                        "
+                    >
                 <div class="text-xs title">${title}</div>
                 <div class="text-xs author">${author}</div>
                 <div class="w-5/6 mx-auto thumbnail"><img src="${thumbnail}" class="text-center mx-auto"></div>
@@ -120,8 +196,6 @@ $("#results").on("click", ".searchItem", function(){
     $("#author").val(author);
     $("#url").val(url);
 })
-
-
 
 </script>
 
