@@ -20,11 +20,14 @@ if($status == false){
  //Selectデータの数だけ自動でループしてくれる
 while( $result = $stmt->fetch(PDO::FETCH_ASSOC)){
 
+    $kanri = $result['kanri_flg'] == 0 ? "0:一般ユーザー" : "1:管理者";
+    $life = $result['life_flg'] == 0 ? "0:無効" : "1:有効";
+
     $view .='<tr>';
     $view .='<th class="border border-gray-300">'.$result["name"].'</th>';
     $view .='<th class="border border-gray-300">'.$result["lid"].'</th>';
-    $view .='<th class="border border-gray-300">'.$result["kanri_flg"].'</th>';
-    $view .='<th class="border border-gray-300">'.$result["life_flg"].'</th>';
+    $view .='<th class="border border-gray-300">'.$kanri.'</th>';
+    $view .='<th class="border border-gray-300">'.$life.'</th>';
     $view .='<th class="border border-gray-300">';
     $view .= '<a href="user_detail.php?id='.$result['id'].'" 
         class="
