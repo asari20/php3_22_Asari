@@ -18,25 +18,25 @@ if($status == false){
     exit("ErrorQuery:".$error[2]);
 }else{
  //Selectデータの数だけ自動でループしてくれる
- while( $result = $stmt->fetch(PDO::FETCH_ASSOC)){
+while( $result = $stmt->fetch(PDO::FETCH_ASSOC)){
 
-   $view .= '<div class="m-1 p-1 border border-gray-300 w-1/3 rounded text-center">';
-   $view .= '<div class="flex justify-end">';
-   $view .= '<a href="detail.php?unique_key='.$result['unique_key'].'" 
+    $view .= '<div class="m-1 p-1 border border-gray-300 w-1/3 rounded text-center">';
+    $view .= '<div class="flex justify-end">';
+    $view .= '<a href="detail.php?unique_key='.$result['unique_key'].'" 
                 class="inline-block mr-1 mb-1"
             >
                 <i class="fa-solid fa-pen"></i>
             </a>';
-   $view .= '<a href="delete.php?unique_key='.$result['unique_key'].'" 
+    $view .= '<a href="delete.php?unique_key='.$result['unique_key'].'" 
                 class="inline-block mr-1 mb-1"
             >
                 <i class="fa-solid fa-trash"></i>
             </a>';
-   $view .= '</div>';
-   $view .= '<div class="text-center mb-1">登録日時：'.$result['indate'].'</div>';
-   $view .= '<div class="text-center mb-1">タイトル：'.$result['name'].'</div>';
-   $view .= '<div class="text-center mb-2">著者：'.$result['author'].'</div>';
-   $view .= '<label class="
+    $view .= '</div>';
+    $view .= '<div class="text-center mb-1">登録日時：'.$result['indate'].'</div>';
+    $view .= '<div class="text-center mb-1">タイトル：'.$result['name'].'</div>';
+    $view .= '<div class="text-center mb-2">著者：'.$result['author'].'</div>';
+    $view .= '<label class="
                     text-center text-white
                     bg-indigo-500
                     rounded border-0
@@ -47,9 +47,9 @@ if($status == false){
             >
                 <a href='.$result['url'].'>リンク</a>
             </label>';
-   $view .= '<div class="text-center my-2">コメント：'.$result['comment'].'</div>';
-   $view .= "</div>";
- }
+    $view .= '<div class="text-center my-2">コメント：'.$result['comment'].'</div>';
+    $view .= "</div>";
+}
 
 }
 
@@ -80,6 +80,13 @@ if($status == false){
                         hover:text-gray-900 hover:cursor-pointer hover:bg-indigo-300
                     ">
                     ブックマーク登録
+                </a>
+                <a href="./user_kanri/user_select.php" 
+                    class="
+                        mr-5
+                        hover:text-gray-900 hover:cursor-pointer hover:bg-indigo-300
+                    ">
+                    ユーザー管理
                 </a>
             </nav>
     </div>

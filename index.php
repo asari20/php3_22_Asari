@@ -24,6 +24,13 @@
                     ">
                     ブックマーク一覧
                 </a>
+                <a href="./User_kanri/login.php" 
+                    class="
+                        mr-5
+                        hover:text-gray-900 hover:cursor-pointer hover:bg-indigo-300
+                    ">
+                    ログイン
+                </a>
             </nav>
     </div>
 </header>
@@ -100,7 +107,7 @@
                     ></textarea>
                 </div>
             </div>
-          
+
             <input type="submit" value="送信" 
                 class="
                     flex
@@ -175,7 +182,6 @@ function searchAPI(val){
                 <div style="display:none" class="link"><a href="${url}">リンク</a></div>
             </div>`
 
-           
         });
         $("#results").append(html);
     })
@@ -186,7 +192,7 @@ $("#name").on("change", searchAPI);
 $("#author").on("change", searchAPI);
 
 $("#results").on("click", ".searchItem", function(){
-   
+
     const title = $(this).children(".title").contents().text();
     const author = $(this).children(".author").contents().text();
     const url = $(this).children(".link").children("a").attr("href");
