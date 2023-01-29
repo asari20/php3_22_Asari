@@ -24,7 +24,7 @@
                     ">
                     ブックマーク一覧
                 </a>
-                <a href="./User_kanri/login.php" 
+                <a href="./user_kanri/login.php" 
                     class="
                         mr-5
                         hover:text-gray-900 hover:cursor-pointer hover:bg-indigo-300
